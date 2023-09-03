@@ -1,0 +1,651 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+/* Your CSS rules and styles go here */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #1a1a1d;
+}
+
+.bell {
+  width: 26.25px;
+  height: 26.25px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.red-line {
+  width: 24px;
+  height: 3.75px;
+  background-color: #da3714;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link.active .red-line {
+  transform: scaleX(1);
+}
+
+.featured img {
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.featured {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    91.99deg,
+    #000000 -1.19%,
+    rgba(0, 0, 0, 0) 73.82%
+  );
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.featured-details {
+  position: absolute;
+  width: 761px;
+  height: 427.5px;
+  left: 97.5px;
+  top: 120px;
+  position: absolute;
+  z-index: 2;
+}
+
+.featured-details h2 {
+  width: 761px;
+  height: 142px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 142px;
+  color: #ffffff;
+}
+
+.featured-details p {
+  width: 567px;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.watch-now {
+  font-family: "Overpass";
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  width: 97px;
+  height: 20px;
+}
+
+.watch {
+  width: 97px;
+  height: 23px;
+}
+
+.f-text span {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  height: 100%;
+}
+
+.f-text {
+  height: 100%;
+}
+
+.footer h1 {
+  width: 139px;
+  height: 30px;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #da3714;
+  margin-bottom: 1px;
+}
+
+.footer p {
+  margin-top: 9px;
+  width: 105px;
+  height: 15px;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.w-img {
+  width: 126px;
+  height: 47px;
+}
+
+.custom-footer {
+  background-color: #111111;
+}
+
+.image-footer {
+  margin-left: 48px;
+}
+
+.information {
+  margin-right: 140.75px;
+}
+
+.app-container {
+  margin-left: 48px;
+  margin-right: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.home-container {
+  margin-bottom: 66px;
+  margin-left: 48px;
+  margin-right: 48px;
+  margin-top: 30px;
+}
+
+.home-text {
+  width: 169px;
+  height: 36px;
+  left: 48px;
+  top: 800.25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.line {
+  margin-top: 24px;
+  height: 0px;
+  border: 0.75px solid #343434;
+}
+
+.movie-img {
+  object-fit: cover;
+  width: 100%;
+  height: 716.07px;
+  border-radius: 16.0795px;
+  z-index: 1;
+}
+
+.movie-details-text {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  width: 1200px;
+}
+
+.rating p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: #727171;
+  margin-right: 25px;
+}
+
+.imdb-img {
+  margin-right: 12px;
+}
+
+.movie-details-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 74px;
+  color: #ffffff;
+  line-height: 85px;
+}
+
+.mv-bt img {
+  margin-left: 63px;
+}
+
+.add-bt {
+  margin-bottom: 5px;
+}
+
+.movdet {
+  margin-bottom: 250px;
+}
+
+.movie-container {
+  position: relative;
+}
+
+.movie-details-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 716px;
+  background: linear-gradient(
+    2.7deg,
+    #1a1a1d -0.65%,
+    rgba(26, 26, 29, 0) 67.05%
+  );
+  border-radius: 16.0795px;
+  z-index: 1;
+}
+
+.movie-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 721px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.rating {
+  margin-top: 110px;
+}
+
+.tag-button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21.6108px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #da3714;
+  padding: 6 10px;
+  box-sizing: border-box;
+}
+
+.movie-tags button {
+  width: 182.65px;
+  height: 40.41px;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: 1.07196px solid #da3714;
+  border-radius: 22.5112px;
+}
+
+.more-like {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.similar-movies-slider {
+  overflow: hidden;
+}
+
+.similar-movies-slider .slick-track {
+  display: flex;
+}
+
+.similar-movies-slider .slick-slide {
+  flex: 0 0 auto;
+  width: auto !important;
+  margin-right: 20px;
+}
+
+.poster-img {
+  width: 160.72px;
+  height: 227.98px;
+}
+
+.trailer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trailer-container {
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.api-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 240px;
+}
+
+.dash {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41.6108px;
+  line-height: 26px;
+}
+
+.buttonClass {
+  font-size: 15px;
+  font-family: Arial;
+  width: 140px;
+  height: 50px;
+  border-width: 1px;
+  color: #fff;
+  border-color: #eeb44f;
+  font-weight: bold;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: inset 0px 1px 0px 0px #fce2c1;
+  text-shadow: inset 0px 1px 0px #cc9f52;
+  background: linear-gradient(#ffc477, #fb9e25);
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#fb9e25, #ffc477);
+}
+
+.delClass {
+  font-size: 15px;
+  font-family: Arial;
+  width: 140px;
+  height: 50px;
+  border-width: 1px;
+  color: #ffffff;
+  border-color: #d83526;
+  font-weight: bold;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: inset 0px 1px 0px 0px #f29c93;
+  text-shadow: inset 0px 1px 0px #b23e35;
+  background: linear-gradient(#fe1a00, #ce0100);
+}
+
+.delClass:hover {
+  background: linear-gradient(#ce0100, #fe1a00);
+}
+
+.addbuttonClass {
+  font-size: 15px;
+  font-family: Arial;
+  width: 140px;
+  height: 50px;
+  border-width: 1px;
+  color: #306108;
+  border-color: #268a16;
+  font-weight: bold;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: inset 0px 1px 0px 0px #caefab;
+  text-shadow: inset 0px 1px 0px #aade7c;
+  background: linear-gradient(#77d42a, #5cb811);
+}
+
+.addbuttonClass:hover {
+  background: linear-gradient(#5cb811, #77d42a);
+}
+
+.canbuttonClass {
+  font-size: 15px;
+  font-family: Arial;
+  width: 140px;
+  height: 50px;
+  border-width: 1px;
+  color: #c92200;
+  border-color: #e65f44;
+  font-weight: bold;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: inset 0px 1px 0px 0px #f9eca0;
+  text-shadow: inset 0px 1px 0px #ded17c;
+  background: linear-gradient(#f0c911, #f2ab1e);
+}
+
+.canbuttonClass:hover {
+  background: linear-gradient(#f2ab1e, #f0c911);
+}
+
+.api-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.api-h {
+  width: 200px;
+  height: 200px;
+}
+
+.api-d {
+  width: 400px;
+  height: 200px;
+}
+
+input {
+  color: black;
+}
+
+.category-card {
+  position: relative;
+  width: 300px;
+  height: 330px;
+  border-radius: 12px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #131313;
+  opacity: 0.7;
+  backdrop-filter: blur(95px);
+  border-radius: 12px;
+}
+
+.category-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid red;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.highlight {
+  width: 150px;
+  height: 50px;
+  background-color: #da3714;
+  margin-top: -10px;
+  border-radius: 15px;
+}
+
+.highlight p {
+  margin-top: 13px;
+}
+
+.buy-now {
+  width: auto;
+  height: 40px;
+  background-color: #da3714;
+  margin-bottom: 20px;
+}
+
+.buy-now:hover {
+  background-color: green;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .featured {
+    height: 230px;
+  }
+
+  .featured img {
+    height: 230px;
+    object-fit: cover;
+  }
+  .featured-details {
+    width: 93%;
+    height: auto;
+    left: 20px;
+    top: -145px;
+  }
+
+  .featured-details h2 {
+    height: 76px;
+    margin-top: 100px;
+    font-size: 24px;
+  }
+
+  .featured-details p {
+    margin-top: 15px;
+    font-size: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .featured-details .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .watch-now {
+    font-size: 24px;
+  }
+
+  .watch-bt button {
+    top: -25px;
+    margin-right: 96px;
+  }
+
+  .featured-details .flex > * + * {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured {
+    height: 280px;
+  }
+
+  .featured-details {
+    width: 93%;
+    height: auto;
+    left: 20px;
+    top: -125px;
+  }
+
+  .featured img {
+    height: 280px;
+    object-fit: cover;
+  }
+  .featured-details h2 {
+    font-size: 26px;
+    height: 90px;
+  }
+
+  .featured-details p {
+    font-size: 10px;
+  }
+
+  .watch-now {
+    font-size: 24px;
+    margin-left: 30px;
+  }
+
+  .watch-bt button {
+    top: -25px;
+    margin-left: 27px;
+  }
+}
