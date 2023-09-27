@@ -102,8 +102,8 @@ const PremiumPricing = () => {
 
     const handlePayment = async () => {
         const options = {
-            key: 'rzp_test_gCQu5SOp8apALq',
-            amount: 49900,
+            key: 'rzp_test_i1YS6f1cyK6UOL',
+            amount: 69900,
             currency: 'INR',
             name: 'WatchFlix OTT - Premium',
             description: 'Purchase',
@@ -172,8 +172,8 @@ const PlusPricing = () => {
 
     const handlePayment = async () => {
         const options = {
-            key: 'rzp_test_gCQu5SOp8apALq',
-            amount: 79900,
+            key: 'rzp_test_i1YS6f1cyK6UOL',
+            amount: 99900,
             currency: 'INR',
             name: 'WatchFlix OTT - Premium 4k',
             description: 'Purchase',
