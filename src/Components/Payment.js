@@ -39,7 +39,7 @@ const MobilePricing = () => {
 
     const handlePayment = async () => {
         const options = {
-            key: 'rzp_test_gCQu5SOp8apALq',
+            key: 'rzp_test_i1YS6f1cyK6UOL',
             amount: 19900,
             currency: 'INR',
             name: 'WatchFlix OTT - Mobile',
